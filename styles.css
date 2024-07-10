@@ -1,0 +1,115 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header {
+    background-color: rgba(42, 146, 221, 0.475);
+    color:  red;
+    text-align: center;
+    padding: 1rem;
+}
+h1{
+    font-size: 60px;
+    color: white
+}
+
+
+
+#tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+
+.tarjeta {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFFFFF; /* Color de fondo de la tarjeta */
+    border-radius: 10px;
+    
+}
+
+
+    .tarjeta img {
+        width: 250px; 
+        height: 250px; 
+        object-fit: cover; 
+    }
+    
+button {
+    background-color: #0074D9;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.opciones button {
+    background-color: rgba(42, 146, 221, 0.475);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    #tarjetas-container {
+        grid-template-columns: 1fr; 
+    }
+}
+.redes-sociales a {
+    
+    transition: transform 0.1s ease;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.redes-sociales a:hover {
+    transform: translateY(-10px); }
+
+@keyframes titilar {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
+footer {
+    background-color: rgba(42, 146, 221, 0.475);
+       color: #FFFFFF; 
+       display: flex;
+       justify-content: center;
+       text-align: center;
+   
+   }
+   footer img {
+       display: block;
+       margin: 0 auto;
+   }
+   
